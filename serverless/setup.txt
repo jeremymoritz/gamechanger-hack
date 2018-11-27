@@ -1,0 +1,23 @@
+# Install Serverless 
+https://serverless.com/
+
+# Create a serverless-admin profile (https://www.youtube.com/watch?v=tgb_MRVylWw)
+sls config credentials --provider aws --key XXX --secret XXX --profile serverless-admin
+
+# Create secrets.json in the serverless directory like so:
+{
+  "amazonPaySecret": "XYZ",
+  "twitchExtensionSecret": "ABC"
+}
+
+# Install dependancies and run locally
+npm install
+npm run dev
+
+# Configure local SSL by copying certs from developer-rig
+cp ../developer-rig/ssl/server.crt ./ssl/cert.pem
+cp ../developer-rig/ssl/server.key ./ssl/key.pem
+
+### Notes
+# SQS Queues for throttling
+https://www.jeremydaly.com/serverless-consumers-with-lambda-and-sqs-triggers/

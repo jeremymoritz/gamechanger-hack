@@ -1,0 +1,35 @@
+{
+  "files.exclude": {
+    "**/dist": true,
+    "**/coverage": true,
+    "fire-gcc/functions/node_modules/": true,
+    "fire-gcc/functions/lib/": true,
+    "serverless/node_modules/": true,
+    "serverless/.serverless": true,
+    "example-serverless-old/node_modules/": true,
+    "example-serverless-typescript-dynamodb/node_modules/": true,
+    "vue-frontend/node_modules/": true,
+    ".idea": true,
+    "developer-rig": true,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.js.map": true
+  },
+  "terminal.integrated.shellArgs.osx": [],
+  "typescript.referencesCodeLens.enabled": true,
+  // "mocha.requires": [
+  //     "ts-node/register"
+  // ],
+  // "mocha.path": "",
+  "terminals.sortTerminals": true, // Sort terminals alphabetically
+  "terminals.env": {}, // Global environment variables that will be applied to all terminals
+  "terminal.integrated.fontSize": 8,
+  "prettier.tslintIntegration": true,
+  "typescript.preferences.quoteStyle": "single",
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "editor.formatOnSave": true
+  // "tslint.typeCheck": true
+  // "tslint.trace.server": "verbose"
+}

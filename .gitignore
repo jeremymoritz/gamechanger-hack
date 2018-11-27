@@ -1,0 +1,8 @@
+.idea/
+developer-rig/
+my-extension/
+.DS_Store
+coverage/
+.nyc_output/
+dist.zip
+serverless/src/secrets.json

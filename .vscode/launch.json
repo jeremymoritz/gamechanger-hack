@@ -1,0 +1,50 @@
+// https://github.com/serverless-heaven/serverless-webpack/tree/master/examples/babel-webpack-4
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Serverless Offline",
+      // "program": "${workspaceRoot}/serverless/node_modules/serverless/bin/serverless",
+      "args": [
+        "offline",
+        "start"
+        // "--noTimeout",
+        // "--dontPrintOutput",
+        // "--stage=dev"
+      ],
+      "sourceMaps": true,
+      // "runtimeArgs": ["--lazy"],
+      "outFiles": ["${workspaceFolder}/serverless/.webpack/**/*.js"],
+      "protocol": "inspector",
+      "runtimeExecutable": "node",
+      "env": {
+        // Here we set some environment vars that should be set locally.
+        // They can and will overwrite the ones coming from your serverless.yml
+      },
+      "windows": {
+        "program": "${workspaceRoot}\\serverless\\node_modules\\serverless\\bin\\serverless"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Invoke Local - colorCycle",
+      "program": "${workspaceRoot}/serverless/node_modules/serverless/bin/serverless",
+      "args": ["invoke", "local", "-f", "colorCycle", "--data", "{}"],
+      "sourceMaps": true,
+      "runtimeArgs": ["--lazy"],
+      "outFiles": ["${workspaceFolder}/serverless/.webpack/**/*.js"],
+      "protocol": "inspector",
+      "runtimeExecutable": "node",
+      "env": {
+        // Here we set some environment vars that should be set locally.
+        // They can and will overwrite the ones coming from your serverless.yml
+      },
+      "windows": {
+        "program": "${workspaceRoot}\\serverless\\node_modules\\serverless\\bin\\serverless"
+      }
+    }
+  ]
+}

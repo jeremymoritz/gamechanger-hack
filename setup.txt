@@ -1,0 +1,17 @@
+# Check out architectureDiagram.png for the basics
+
+# Twitch Extensions Documentation
+https://dev.twitch.tv/docs/extensions/
+
+# To get the basics on Serverless, check out this video playlist
+https://www.youtube.com/watch?v=lUTGk64jppM&list=PLzvRQMJ9HDiT5b4OsmIBiMbsPjfp4kfg3
+
+# Open the reinvent2018 folder with VSCode
+https://code.visualstudio.com/
+
+# Clone and follow instructions to setup developer-rig inside reinvent2018 folder
+https://github.com/twitchdev/developer-rig
+
+# For working with the backend, Follow instructions in serverless/setup.txt
+
+# For working with the frontend, follow instructions in vue-frontend/setup.txt

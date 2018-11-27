@@ -1,0 +1,46 @@
+{
+  "name": "gcc-te",
+  "version": "1.0.0",
+  "description": "Backend for GameChanger Charity's Twitch Extension",
+  "main": "handler.js",
+  "scripts": {
+    "test": "env IS_OFFLINE=true mocha --reporter min --require ts-node/register \"tests/**/*.spec.ts\"",
+    "lint": "./node_modules/.bin/tslint -p tsconfig.json || true",
+    "check": "npm run test && npm run lint",
+    "dev": "serverless dynamodb install && serverless offline start",
+    "deploy": "serverless deploy -v",
+    "deploy:cycleColor": "serverless deploy -v -f cycleColor",
+    "deploy:amazonPay": "serverless deploy -v -f amazonPayIpnHandler && serverless deploy -v -f amazonPaySignature",
+    "remove": "serverless remove"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "fast-xml-parser": "^3.12.5",
+    "jsonwebtoken": "^8.3.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.1",
+    "@types/chai": "^4.1.6",
+    "@types/jsonwebtoken": "^7.2.8",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^8.0.57",
+    "@types/twitch-ext": "^1.15.1",
+    "@types/uuid": "^3.4.4",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "serverless": "^1.32.0",
+    "serverless-dynamodb-local": "^0.2.35",
+    "serverless-offline": "^3.27.0",
+    "serverless-webpack": "^5.1.1",
+    "source-map-support": "^0.5.6",
+    "ts-loader": "^4.2.0",
+    "ts-node": "^7.0.1",
+    "ts-sinon": "^1.0.12",
+    "tslint": "^5.11.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.5.0"
+  },
+  "author": "Nate Invent-O-Nater Aschenbach",
+  "license": "MIT"
+}

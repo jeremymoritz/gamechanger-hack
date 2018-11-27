@@ -1,0 +1,8 @@
+#curl -H "Client-ID: th40ow0zog4oe9by5a1mtbsuqmadvb" -X GET https://api.twitch.tv/helix/users?login=gamechangerorg
+
+# gamechangerorg - 63636358
+# Capital_D - 103023432
+# inventonater - 102503310
+# ant0n1op - 38659224
+# atwheelzz - 109524830
+# fungineer - 25015105

@@ -1,0 +1,45 @@
+{
+  "autorun": true,
+  "autokill": true,
+  "env": {
+    "name": "value"
+  },
+  "terminals": [
+    {
+      "name": "rig-start",
+      "description": "Run the rig",
+      "focus": true,
+      "icon": "code",
+      "cwd": "./developer-rig",
+      "persistent": "rig-start",
+      "commands": ["yarn install", "yarn start"]
+    },
+    {
+      "name": "rig-host",
+      "description": "Host static frontend files",
+      "focus": true,
+      "icon": "code",
+      "cwd": "./developer-rig",
+      "persistent": "rig-host",
+      "commands": ["yarn host -d ../vue-frontend/dist/ -p 8080"]
+    },
+    {
+      "name": "vue-build-watch",
+      "description": "Build and watch frontend files",
+      "focus": true,
+      "icon": "code",
+      "cwd": "./vue-frontend",
+      "persistent": "vue-build-watch",
+      "commands": ["npm install", "npm run dev"]
+    },
+    {
+      "name": "serverless-offline",
+      "description": "Run Serverless Offline",
+      "focus": true,
+      "icon": "code",
+      "cwd": "./serverless",
+      "persistent": "serverless-offline",
+      "commands": ["npm install", "npm run dev"]
+    }
+  ]
+}

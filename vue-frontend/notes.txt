@@ -1,0 +1,3 @@
+Alternative to Axios for API - https://itnext.io/how-not-to-suffer-with-apis-8aa75f890fe6
+Form validation - //https://github.com/Kelin2025/vuelidate-forms
+Vue Testing Handbook - https://lmiller1990.github.io/vue-testing-handbook/#what-is-this-guide

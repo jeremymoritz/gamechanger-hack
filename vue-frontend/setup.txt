@@ -1,0 +1,10 @@
+# Install Vue
+npm install -g @vue/cli
+npm install -g @vue/cli-service-global
+
+# Install project dependances
+npm install
+
+# Install AWS CLI
+pip install awscli ## For Windows use https://aws.amazon.com/cli/
+

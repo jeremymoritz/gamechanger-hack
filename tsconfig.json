@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "baseUrl": "./vue-frontend",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["es2015", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": [
+    "vue-frontend/src/**/*.ts",
+    "vue-frontend/src/**/*.tsx",
+    "vue-frontend/src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": ["node_modules"]
+}
